@@ -1,3 +1,4 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://sglearning.netlify.app"
+languageCode = 'en-gl.eus'
+title = "My Portfolio"
+theme = "ananke"
