@@ -1,8 +1,8 @@
 +++
-date = '2025-03-13T13:25:04Z'
+date = "2025-03-13T13:25:04Z"
 draft = false
-title = 'About'
-weight: 1
+title = "About"
+weight = 1
 +++
 About Me
 
