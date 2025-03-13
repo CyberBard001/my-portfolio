@@ -4,12 +4,12 @@ weight: 2
 draft: false
 ---
 
-## 🎓 Articulate Storyline Module - From Rage to Resolution The Art of De-escalating furious customers
+## Articulate Storyline Module - From Rage to Resolution The Art of De-escalating furious customers
 
-### 📝 Project Description  
+### Project Description  
 This project was designed to **Help contact centre workers deal with and de-escalate contacts where a caller is angry or frustrated.**.
 
-### 🎯 My Aims  
+### My Aims  
 I created an innovative e-learning module that empowers contact center advisors to effectively handle difficult calls by de-escalating customer frustration before it intensifies. This approach not only calms the situation but also prevents potential escalation.
 
 My journey into instructional design and e-learning development has been enriched by free Coursera courses, deep online research, insightful YouTube tutorials, detailed industry blogs, and newsletters from top experts. Additionally, my extensive experience in customer-centric roles across the retail, security, energy, and broadband industries has refined my soft skills and conflict resolution strategies.
