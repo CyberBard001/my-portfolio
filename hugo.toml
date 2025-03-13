@@ -1,6 +1,6 @@
 baseURL = "https://sglearning.netlify.app"
 languageCode = 'en-gl.eus'
-title = "My Portfolio"
+title = "Stuart Gibson | Interactive Learning & Design"
 theme = "ananke"
 
 [[menu.main]]
