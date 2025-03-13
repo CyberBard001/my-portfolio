@@ -5,6 +5,9 @@ title = "Contact"
 weight = 3
 +++
 
+**📬 Get in Touch!**  
+Fill out the form below or reach out via email or LinkedIn.
+
 <form name="contact" method="POST" data-netlify="true">
   <p>
     <label>Your Name: <input type="text" name="name" required /></label>
@@ -22,5 +25,5 @@ weight = 3
 
 ---
 
-📧 Prefer email? Contact me at **[sgidandfacilitation@gmail.com](mailto:sgidandfacilitation@gmail.com)**  
-🔗 Connect with me on **[LinkedIn](https://www.linkedin.com/in/stuart-gibson-97a20278/)**  
+📧 **Prefer email?** Contact me at **[sgidandfacilitation@gmail.com](mailto:sgidandfacilitation@gmail.com)**  
+🔗 **Connect with me on** [LinkedIn](https://www.linkedin.com/in/stuart-gibson-97a20278/)
