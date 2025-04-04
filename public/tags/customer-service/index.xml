@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Customer Service on Stuart Gibson | Interactive Learning &amp; Design</title>
+    <link>http://localhost:1313/tags/customer-service/</link>
+    <description>Recent content in Customer Service on Stuart Gibson | Interactive Learning &amp; Design</description>
+    <generator>Hugo</generator>
+    <language>en-gl.eus</language>
+    <atom:link href="http://localhost:1313/tags/customer-service/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>From Rage to Resolution – The Art of De-escalating Furious Customers</title>
+      <link>http://localhost:1313/portfolio/from-rage-to-resolution/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/from-rage-to-resolution/</guid>
+      <description>A Storyline module empowering contact centre advisors to defuse anger using AI visuals, narration, and scenario-based learning.</description>
+    </item>
+  </channel>
+</rss>

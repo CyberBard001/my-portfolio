@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SG Learning – Instructional Design + AI</title>
+    {{ $style := resources.Get "css/custom.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+  </head>
+  <body>
+    <img src="/images/sg-logo.png" alt="SG Learning Logo" style="height: 60px; position: fixed; top: 1rem; left: 1rem; z-index: 100;">
+    <button id="theme-toggle" 
+      style="
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        z-index: 9999;
+        background: white;
+        color: black;
+        border: none;
+        padding: 0.5rem;
+        border-radius: 50%;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        cursor: pointer;">
+      🌓
+    </button>
+
+    <section class="hero">
+      <div class="container">
+        <h1>Hello, I'm an Instructional Designer</h1>
+        <p>I create effective and engaging learning experiences.</p>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2>Portfolio</h2>
+        {{ range where .Site.RegularPages "Section" "portfolio" }}
+        <div class="card">
+          {{ with .Params.cover }}
+            <img src="{{ . }}" alt="Project cover" class="card-cover" style="width: 100%; border-radius: 0.5rem; margin-bottom: 1rem;">
+          {{ end }}
+          <h3>{{ .Title }}</h3>
+          <p>{{ .Params.summary }}</p>
+          <a href="{{ .RelPermalink }}" class="btn">View Project</a>
+        </div>
+        {{ end }}
+      </div>
+    </section>      
+
+    <section class="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>I’m an instructional designer passionate about creative, tech-forward training using Storyline, Rise 360, and AI tools.</p>
+      </div>
+    </section>
+
+    <section class="ai">
+      <div class="container">
+        <h2>Enhancing Learning with AI</h2>
+        <ul>
+          <li>Storyboard creation with ChatGPT</li>
+          <li>AI video generation using Sora</li>
+          <li>Auto module creation with GPT & Rise</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Want to collaborate or chat about learning design?</p>
+        <a href="/contact" class="btn">Send Message</a>
+      </div>
+    </section>
+
+    <script>
+      const toggleBtn = document.getElementById('theme-toggle');
+
+      if (!localStorage.getItem('theme')) {
+        localStorage.setItem('theme', 'light');
+      }
+
+      const currentTheme = localStorage.getItem('theme');
+      if (currentTheme) {
+        document.documentElement.setAttribute('data-theme', currentTheme);
+      }
+
+      toggleBtn.addEventListener('click', () => {
+        let theme = document.documentElement.getAttribute('data-theme');
+        if (theme === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'light');
+          localStorage.setItem('theme', 'light');
+        } else {
+          document.documentElement.setAttribute('data-theme', 'dark');
+          localStorage.setItem('theme', 'dark');
+        }
+      });
+    </script>
+  </body>
+</html>
