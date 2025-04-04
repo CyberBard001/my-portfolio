@@ -1,12 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on My Portfolio</title>
-    <link>https://sglearning.netlify.app/</link>
-    <description>Recent content in Home on My Portfolio</description>
+    <title>About Me on Stuart Gibson | Interactive Learning &amp; Design</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in About Me on Stuart Gibson | Interactive Learning &amp; Design</description>
     <generator>Hugo</generator>
     <language>en-gl.eus</language>
-    <lastBuildDate></lastBuildDate>
-    <atom:link href="https://sglearning.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Mar 2025 13:25:04 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Thu, 13 Mar 2025 13:25:04 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;About Me&lt;/p&gt;&#xA;&lt;p&gt;Hi, I’m Stuart Gibson! 🚀&#xA;I’m a lifelong learner, training facilitator, and instructional designer who thrives on helping others grow. Whether it&amp;rsquo;s through facilitating training sessions, designing engaging learning experiences, or mentoring new talent, I’m always excited to support others on their journey to success.&lt;/p&gt;&#xA;&lt;p&gt;My Journey into Training Facilitation &amp;amp; Instructional Design&#xA;In 2021, I officially stepped into the world of training as a Training Facilitator at Firstsource Solutions Ltd—and I’ve loved every minute of it! Initially, I worked in the sales training team for a broadband company, where I developed my facilitation skills, ensuring that training was engaging, adaptable, and effective for a wide range of learners.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>From Rage to Resolution – The Art of De-escalating Furious Customers</title>
+      <link>http://localhost:1313/portfolio/from-rage-to-resolution/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/from-rage-to-resolution/</guid>
+      <description>A Storyline module empowering contact centre advisors to defuse anger using AI visuals, narration, and scenario-based learning.</description>
+    </item>
+    <item>
+      <title>Portfolio</title>
+      <link>http://localhost:1313/old.portfolio/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/old.portfolio/</guid>
+      <description>&lt;h2 id=&#34;articulate-storyline-module---from-rage-to-resolution-the-art-of-de-escalating-furious-customers&#34;&gt;Articulate Storyline Module - From Rage to Resolution The Art of De-escalating furious customers&lt;/h2&gt;&#xA;&lt;h3 id=&#34;project-description&#34;&gt;Project Description&lt;/h3&gt;&#xA;&lt;p&gt;This project was designed to &lt;strong&gt;Help contact centre workers deal with and de-escalate contacts where a caller is angry or frustrated.&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;h3 id=&#34;my-aims&#34;&gt;My Aims&lt;/h3&gt;&#xA;&lt;p&gt;I created an innovative e-learning module that empowers contact center advisors to effectively handle difficult calls by de-escalating customer frustration before it intensifies. This approach not only calms the situation but also prevents potential escalation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Thu, 13 Mar 2025 13:25:04 +0000</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;📬 Get in Touch!&lt;/strong&gt;&lt;br&gt;&#xA;Fill out the form below or reach out via email or LinkedIn.&lt;/p&gt;&#xA;&lt;form name=&#34;contact&#34; method=&#34;POST&#34; data-netlify=&#34;true&#34;&gt;&#xA;  &lt;p&gt;&#xA;    &lt;label&gt;Your Name: &lt;input type=&#34;text&#34; name=&#34;name&#34; required /&gt;&lt;/label&gt;&#xA;  &lt;/p&gt;&#xA;  &lt;p&gt;&#xA;    &lt;label&gt;Your Email: &lt;input type=&#34;email&#34; name=&#34;email&#34; required /&gt;&lt;/label&gt;&#xA;  &lt;/p&gt;&#xA;  &lt;p&gt;&#xA;    &lt;label&gt;Message: &lt;textarea name=&#34;message&#34; required&gt;&lt;/textarea&gt;&lt;/label&gt;&#xA;  &lt;/p&gt;&#xA;  &lt;p&gt;&#xA;    &lt;button type=&#34;submit&#34;&gt;Send&lt;/button&gt;&#xA;  &lt;/p&gt;&#xA;&lt;/form&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;📧 &lt;strong&gt;Prefer email?&lt;/strong&gt; Contact me at &lt;strong&gt;&lt;a href=&#34;mailto:sgidandfacilitation@gmail.com&#34;&gt;sgidandfacilitation@gmail.com&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;&#xA;🔗 &lt;strong&gt;Connect with me on&lt;/strong&gt; &lt;a href=&#34;https://www.linkedin.com/in/stuart-gibson-97a20278/&#34;&gt;LinkedIn&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Power Play – Saving Energy at Home</title>
+      <link>http://localhost:1313/portfolio/energy-saver/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/energy-saver/</guid>
+      <description>In-progress: A hybrid e-learning series helping families reduce energy bills through interactive simulations and real-life scenarios.</description>
+    </item>
   </channel>
 </rss>
