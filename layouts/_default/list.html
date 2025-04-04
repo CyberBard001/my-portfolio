@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ .Title }} | SG Learning</title>
+  {{ $style := resources.Get "css/custom.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+</head>
+<body>
+  <!-- Header with logo and nav -->
+  <header style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background: var(--bg); position: sticky; top: 0; z-index: 1000;">
+    <img src="/images/sg-logo.png" alt="SG Learning Logo" style="height: 50px;">
+    <nav>
+      <a href="/" style="margin-right: 1rem;">Home</a>
+      <a href="/about/" style="margin-right: 1rem;">About</a>
+      <a href="/portfolio/" style="margin-right: 1rem;">Portfolio</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero / Header Section -->
+  <section class="hero" style="padding: 4rem 1rem; text-align: center;">
+    <div class="container">
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <main class="container" style="padding: 2rem 1rem;">
+    {{ .Content }}
+    {{ with .Params.cover }}
+      <img src="{{ . }}" alt="Cover image" style="margin-top: 2rem; max-width: 100%; border-radius: 10px;">
+    {{ end }}
+  </main>
+
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 2rem 1rem; background: var(--bg);">
+    <p>© Stuart Gibson | Interactive Learning & Design 2025</p>
+  </footer>
+</body>
+</html>
