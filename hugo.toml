@@ -1,7 +1,7 @@
 baseURL = "https://sglearning.netlify.app"
 languageCode = 'en-gl.eus'
 title = "Stuart Gibson | Interactive Learning & Design"
-theme = "ananke"
+theme = "ananke-local"
 
 [[menu.main]]
     name = "Home"
