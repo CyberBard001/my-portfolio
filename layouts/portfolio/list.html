@@ -20,10 +20,12 @@
     </nav>
   </header>
 
-  <!-- Intro -->
-  <section class="container" style="padding-top: 4rem;">
-    <h1>{{ .Title }}</h1>
-    <p>{{ .Params.summary | default "Explore a selection of my e-learning, design, and interactive projects." }}</p>
+  <!-- Hero Banner -->
+  <section class="hero">
+    <div class="container">
+      <h1>{{ .Title }}</h1>
+      <p>{{ .Params.summary | default "Explore a selection of my e-learning, design, and interactive projects." }}</p>
+    </div>
   </section>
 
   <!-- Portfolio Cards -->

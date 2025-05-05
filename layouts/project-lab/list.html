@@ -19,10 +19,21 @@
     </nav>
   </header>
 
+  <!-- Hero Banner -->
+  <section class="hero">
+    <div class="container">
+      <h1>{{ .Title }}</h1>
+      <p>{{ .Params.summary | default "Browse my side projects, experiments, and learning tools." }}</p>
+    </div>
+  </section>
+
+  <!-- Removed duplicate section below hero -->
+  <!--
   <section class="container" style="padding-top: 4rem;">
     <h1>{{ .Title }}</h1>
     <p>{{ .Params.summary | default "Browse my side projects, experiments, and learning tools." }}</p>
   </section>
+  -->
 
   <main class="container portfolio" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; padding-bottom: 3rem;">
     {{ range .Pages.ByDate.Reverse }}
