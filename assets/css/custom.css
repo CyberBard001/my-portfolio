@@ -51,6 +51,12 @@ body {
     position: relative;
   }  
   
+  .hero h1,
+  .hero p {
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  }
+  
   .card {
     background: var(--card-bg);
     color: var(--text);
@@ -161,4 +167,19 @@ body {
     background-color: #44416a;
     color: #eee;
   }
-  
+
+/* Style nav links like buttons */
+nav a {
+  padding: 0.5rem 1rem;
+  background: #5b4dff;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 0.5rem;
+  transition: background 0.2s ease;
+}
+
+nav a:hover {
+  background: #4538d1;
+}

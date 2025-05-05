@@ -2,7 +2,7 @@
 title: "Power Play – Saving Energy at Home"
 summary: "In-progress: A hybrid e-learning series helping families reduce energy bills through interactive simulations and real-life scenarios."
 tags: ["Storyline", "Rise360", "AI", "Energy", "eLearning"]
-cover: "/images/energy-saver.jpg"
+cover: "energy-saver.jpg"
 draft: false
 weight: 3
 ---

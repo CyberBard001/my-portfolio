@@ -3,76 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SG Learning – Instructional Design + AI</title>
+    <title>{{ .Title }} | SG Learning</title>
     {{ $style := resources.Get "css/custom.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
   </head>
   <body>
-    <img src="/images/sg-logo.png" alt="SG Learning Logo" style="height: 60px; position: fixed; top: 1rem; left: 1rem; z-index: 100;">
-    <button id="theme-toggle" 
-      style="
-        position: fixed;
-        top: 1rem;
-        right: 1rem;
-        z-index: 9999;
-        background: white;
-        color: black;
-        border: none;
-        padding: 0.5rem;
-        border-radius: 50%;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        cursor: pointer;">
-      🌓
-    </button>
+    <!-- Header with logo and nav -->
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background: var(--bg); position: sticky; top: 0; z-index: 1000;">
+      <img src="/images/sg-logo.png" alt="SG Learning Logo" style="height: 50px;">
+      <nav>
+        <a href="/" style="margin-right: 1rem;">Home</a>
+        <a href="/about/" style="margin-right: 1rem;">About</a>
+        <a href="/portfolio/" style="margin-right: 1rem;">Portfolio</a>
+        <a href="/project-lab/" style="margin-right: 1rem;">Project Lab</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+    </header>
 
-    <section class="hero">
+    <!-- Hero Section -->
+    <section class="hero" style="padding: 4rem 1rem; text-align: center;">
       <div class="container">
         <h1>Hi, I’m Stuart — I Design Training That’s Never Boring</h1>
         <p>I craft engaging, human-centered learning experiences that empower growth and real-world results.</p>
       </div>
-    </section>    
+    </section>
 
-    <section class="portfolio" id="portfolio">
-      <div class="container">
-        <h2>Portfolio</h2>
-        {{ range where .Site.RegularPages "Section" "portfolio" }}
-        <div class="card">
-          {{ with .Params.cover }}
-            <img src="{{ . }}" alt="Project cover" class="card-cover" style="width: 100%; border-radius: 0.5rem; margin-bottom: 1rem;">
-          {{ end }}
-          <h3>{{ .Title }}</h3>
-          <p>{{ .Params.summary }}</p>
-          <a href="{{ .RelPermalink }}" class="btn">View Project</a>
+    <!-- Featured Project Section -->
+    <section class="featured-project" style="padding: 2rem 1rem;">
+      <div style="max-width: 960px; margin: 0 auto; background: white; border-radius: 16px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); overflow: hidden;">
+        <img src="/images/rage-cover.jpg" alt="From Rage to Resolution Cover" style="width: 100%; max-height: 400px; object-fit: cover;">
+        <div style="padding: 1.5rem;">
+          <h2>From Rage to Resolution – The Art of De-escalating Furious Customers</h2>
+          <p style="margin: 1rem 0;">A Storyline module empowering contact centre advisors to defuse anger using AI visuals, narration, and scenario-based learning.</p>
+          <a href="/portfolio/from-rage-to-resolution/" style="display: inline-block; padding: 0.75rem 1.5rem; background-color: #6C63FF; color: white; border-radius: 8px; text-decoration: none;">View Project</a>
         </div>
-        {{ end }}
-      </div>
-    </section>      
-
-    <section class="about">
-      <div class="container">
-        <h2>About Me</h2>
-        <p>I’m an instructional designer passionate about creative, tech-forward training using Storyline, Rise 360, and AI tools.</p>
       </div>
     </section>
 
-    <section class="ai">
-      <div class="container">
-        <h2>Enhancing Learning with AI</h2>
-        <ul>
-          <li>Storyboard creation with ChatGPT</li>
-          <li>AI video generation using Sora</li>
-          <li>Auto module creation with GPT & Rise</li>
-        </ul>
+    <!-- Power Play Project Card -->
+    <section class="project-card" style="margin: 2rem auto; max-width: 960px; padding: 1.5rem; background: white; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+      <img src="/images/energy-saver.jpg" alt="Power Play Cover" style="width: 100%; border-radius: 0.5rem;" />
+      <div style="margin-top: 1rem;">
+        <h2>Power Play – Saving Energy at Home</h2>
+        <p>In-progress: A hybrid e-learning series helping families reduce energy bills through interactive simulations and real-life scenarios.</p>
+        <a href="/portfolio/energy-saver/" style="display: inline-block; margin-top: 1rem; padding: 0.5rem 1rem; background: #6C63FF; color: white; text-decoration: none; border-radius: 0.5rem;">View Project</a>
       </div>
     </section>
 
-    <section class="contact" id="contact">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>Want to collaborate or chat about learning design?</p>
-        <a href="/contact" class="btn">Send Message</a>
+    <!-- Cookie Clicker CPS Checker Card -->
+    <div style="background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); margin-bottom: 2rem; overflow: hidden;">
+      <img src="/images/cookie-cps.jpg" alt="Cookie Clicker CPS Checker" style="width: 100%; height: auto; display: block;">
+      <div style="padding: 1.5rem;">
+        <h2 style="font-size: 1.25rem; font-weight: 600;">Cookie Clicker CPS Checker</h2>
+        <p style="margin-top: 0.5rem;">A fun browser-based calculator to help players make strategic upgrade decisions in Cookie Clicker by comparing cookies-per-second boosts.</p>
+        <a href="/portfolio/cookie-clicker/" style="display: inline-block; margin-top: 1rem; padding: 0.5rem 1rem; background: #5b4dff; color: #fff; border-radius: 8px; text-decoration: none;">View Project</a>
       </div>
-    </section>
+    </div>
+
+    <!-- Budgetwise – Income & Expenditure Tracker Card -->
+    <div style="background: #fff; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); margin-bottom: 2rem; overflow: hidden;">
+      <img src="/images/budgetwiseform.jpg" alt="Budgetwise Tracker Screenshot" style="width: 100%; height: auto; display: block;">
+      <div style="padding: 1.5rem;">
+        <h2 style="font-size: 1.25rem; font-weight: 600;">Budgetwise – Income & Expenditure Tracker</h2>
+        <p style="margin-top: 0.5rem;">A personal budgeting app that lets users track income, spending, and recurring bills with custom categories and visual summaries. Built to support families through practical money management tools.</p>
+        <a href="/portfolio/budgetwise/" style="display: inline-block; margin-top: 1rem; padding: 0.5rem 1rem; background: #5b4dff; color: #fff; border-radius: 8px; text-decoration: none;">View Project</a>
+      </div>
+    </div>
+
+    <!-- Custom Homepage Content from _index.md -->
+    <main class="container" style="padding: 2rem 1rem;">
+      {{ .Content }}
+    </main>
+
+    <!-- Footer -->
+    <footer style="text-align: center; padding: 2rem 1rem; background: var(--bg);">
+      <p>© Stuart Gibson | Interactive Learning & Design 2025</p>
+    </footer>
 
     <script>
       const toggleBtn = document.getElementById('theme-toggle');

@@ -1,8 +1,8 @@
 ---
 title: "From Rage to Resolution – The Art of De-escalating Furious Customers"
-summary: "A Storyline module empowering contact centre advisors to defuse anger using AI visuals, narration, and scenario-based learning."
 tags: ["Storyline", "AI", "Customer Service"]
-cover: "/images/rage-cover.jpg"
+cover: "rage-cover.jpg"
+summary: "A Storyline module empowering contact centre advisors to defuse anger using AI visuals, narration, and scenario-based learning."
 weight: 1
 draft: false
 ---

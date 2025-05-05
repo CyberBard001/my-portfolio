@@ -17,4 +17,4 @@ My journey into instructional design and e-learning development has been enriche
 For this project, I harnessed the power of generative AI to develop both the audio and visual components. I employed Midjourney for creating compelling images and Elevenlabs.io for high-quality voice generation, while the foundational storyboard was crafted in Microsoft Word and PowerPoint.
 
 ### ▶️ View the Interactive Module  
-👉 [Click here to launch](../storyline/project1/story.html)
+👉 [Click here to launch](../project-lab/storyline/project1/story.html)

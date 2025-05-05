@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ .Title }} | SG Learning</title>
+  {{ $style := resources.Get "css/custom.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+</head>
+<body>
+  <header style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background: var(--bg); position: sticky; top: 0; z-index: 1000;">
+    <img src="/images/sg-logo.png" alt="SG Learning Logo" style="height: 50px;">
+    <nav>
+      <a href="/" class="btn">Home</a>
+      <a href="/about/" class="btn">About</a>
+      <a href="/portfolio/" class="btn">Portfolio</a>
+      <a href="/project-lab/" class="btn">Project Lab</a>
+      <a href="/contact/" class="btn">Contact</a>
+    </nav>
+  </header>
+
+  <main style="padding: 2rem;">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+
+    <div class="project-grid">
+      {{ range .Pages }}
+        <div class="project-card">
+          <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+          <p>{{ .Params.summary }}</p>
+        </div>
+      {{ end }}
+    </div>
+  </main>
+</body>
+</html>

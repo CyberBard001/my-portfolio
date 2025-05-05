@@ -2,6 +2,7 @@
 title: "Budgetwise: Income & Expense Tracker"
 date: 2025-04-20
 tags: ["React", "Finance", "Web App", "Personal Projects"]
+cover: "budgetwiseform.jpg"
 ---
 
 Budgetwise is a lightweight income and expenditure tracker designed to help individuals and families manage their money more clearly. It supports income and bills, frequency settings, essential vs flexible spending, and smart summaries to guide budgeting decisions.
