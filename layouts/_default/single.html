@@ -6,22 +6,73 @@
   <title>{{ .Title }} | SG Learning</title>
   {{ $style := resources.Get "css/custom.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+  <style>
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: #f5f5f5;
+      z-index: 1000;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    nav {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      nav {
+        display: none;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 1rem;
+      }
+
+      nav.show {
+        display: flex;
+      }
+    }
+
+    body {
+      padding-top: 100px;
+    }
+  </style>
 </head>
 <body>
-  <!-- Header with logo and nav -->
-  <header style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background: var(--bg); position: sticky; top: 0; z-index: 1000;">
+  <!-- Header -->
+  <header>
     <img src="/images/sg-logo.png" alt="SG Learning Logo" style="height: 50px;">
+    <button class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('show')">☰</button>
     <nav>
-      <a href="/" style="margin-right: 1rem;">Home</a>
-      <a href="/about/" style="margin-right: 1rem;">About</a>
-      <a href="/portfolio/" style="margin-right: 1rem;">Portfolio</a>
-      <a href="/project-lab/" style="margin-right: 1rem;">Project Lab</a>
-      <a href="/blog/" style="margin-right: 1rem;">Blog</a>
-      <a href="/contact/">Contact</a>
+      <a href="/" class="btn">Home</a>
+      <a href="/about/" class="btn">About</a>
+      <a href="/portfolio/" class="btn">Portfolio</a>
+      <a href="/project-lab/" class="btn">Project Lab</a>
+      <a href="/blog/" class="btn">Blog</a>
+      <a href="/contact/" class="btn">Contact</a>
     </nav>
   </header>
 
-  <!-- Hero / Header Section -->
+  <!-- Hero -->
   <section class="hero" style="padding: 4rem 1rem; text-align: center;">
     <div class="container">
       <h1>{{ .Title }}</h1>
@@ -29,7 +80,7 @@
     </div>
   </section>
 
-  <!-- Content Section -->
+  <!-- Content -->
   <main class="container" style="padding: 2rem 1rem;">
     {{ .Content }}
     {{ with .Params.cover }}

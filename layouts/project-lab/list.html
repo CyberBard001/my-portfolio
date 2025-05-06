@@ -8,14 +8,19 @@
   <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 </head>
 <body>
-  <header style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; background: var(--bg); position: sticky; top: 0; z-index: 1000;">
-    <img src="/images/sg-logo.png" alt="SG Learning Logo" style="height: 50px;">
-    <nav>
-      <a href="/" class="btn">Home</a>
-      <a href="/about/" class="btn">About</a>
-      <a href="/portfolio/" class="btn">Portfolio</a>
-      <a href="/project-lab/" class="btn">Project Lab</a>
-      <a href="/contact/" class="btn">Contact</a>
+  <!-- Responsive Header -->
+  <header class="site-header">
+    <div class="nav-container">
+      <img src="/images/sg-logo.png" alt="SG Learning Logo" style="height: 50px;">
+      <button class="burger" aria-label="Toggle menu">&#9776;</button>
+    </div>
+    <nav class="main-nav">
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/portfolio/">Portfolio</a>
+      <a href="/project-lab/">Project Lab</a>
+      <a href="/blog/">Blog</a>
+      <a href="/contact/">Contact</a>
     </nav>
   </header>
 
@@ -27,14 +32,7 @@
     </div>
   </section>
 
-  <!-- Removed duplicate section below hero -->
-  <!--
-  <section class="container" style="padding-top: 4rem;">
-    <h1>{{ .Title }}</h1>
-    <p>{{ .Params.summary | default "Browse my side projects, experiments, and learning tools." }}</p>
-  </section>
-  -->
-
+  <!-- Project Grid -->
   <main class="container portfolio" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; padding-bottom: 3rem;">
     {{ range .Pages.ByDate.Reverse }}
       <div class="card">
@@ -66,5 +64,14 @@
   <footer style="text-align: center; padding: 2rem 1rem; background: var(--bg);">
     <p>© Stuart Gibson | Interactive Learning & Design 2025</p>
   </footer>
+
+  <!-- Toggle Script -->
+  <script>
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.main-nav');
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  </script>
 </body>
 </html>

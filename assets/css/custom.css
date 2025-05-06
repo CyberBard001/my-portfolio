@@ -1,174 +1,129 @@
 :root {
-    --bg: #f5f5f5;
-    --text: #111;
-    --accent: #6a5acd;
-    --card-bg: #fff;
-  }
-  
-  [data-theme='dark'] {
-    --bg: #1e1e2f;
-    --text: #eee;
-    --accent: #9b8cff;
-    --card-bg: #2a2a3d;
-  }
-  
-  body {
-    background-color: var(--bg);
-    color: var(--text);
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-body {
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f5f5f5;
-    color: #111;
-  }
-  
-  section {
-    padding: 4rem 1rem;
-    border-bottom: 1px solid #ddd;
-    background-color: var(--bg);
-    color: var(--text);
-  }  
-  
-  .container {
-    max-width: 900px;
-    margin: 0 auto;
-    color: var(--text);
-  }  
-  
-  h1, h2 {
-    color: var(--text);
-  }  
-  
-  .hero {
-    background: url('/images/hero-bg.jpg') center/cover no-repeat;
-    color: var(--text);
-    text-align: center;
-    padding: 8rem 1rem;
-    position: relative;
-  }  
-  
-  .hero h1,
-  .hero p {
-    color: #fff;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
-  }
-  
-  .card {
-    background: var(--card-bg);
-    color: var(--text);
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    margin-bottom: 1rem;
-  }  
-  
-  
-  .btn {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.75rem 1.25rem;
-    background: #6a5acd;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  .card {
-    background: white;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    margin-bottom: 1rem;
-  }
- /* Container for portfolio section */
-.portfolio .container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  
-  /* Portfolio cards */
-  .card {
-    background-color: var(--card-bg, #fff);
-    padding: 1.5rem 2rem;
-    border-radius: 1rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
-  }
-  
-  /* Card title */
-  .card h3 {
-    margin-top: 0;
-    font-size: 1.25rem;
-    font-weight: 600;
-  }
-  
-  /* Summary text */
-  .card p {
-    font-size: 1rem;
-    color: var(--text-muted, #555);
-  }
-  
-  /* View Project button */
-  .card .btn {
-    display: inline-block;
-    margin-top: 1rem;
-    background-color: #6c47ff;
-    color: white;
-    padding: 0.6rem 1.2rem;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background-color 0.3s ease;
-  }
-  
-  .card .btn:hover {
-    background-color: #5532d9;
-  }
-  .card-cover {
-    width: 100%;
-    height: auto;
-    border-radius: 0.75rem;
-    margin-bottom: 1rem;
-    object-fit: cover;
-  }
-  
-  /* Tag container and appearance */
-  .tags {
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-  
-  .tag {
-    display: inline-block;
-    background-color: #eaeaff;
-    color: #333;
-    font-size: 0.75rem;
-    padding: 0.3rem 0.6rem;
-    border-radius: 0.5rem;
-    font-weight: 500;
-    transition: background-color 0.3s ease;
-  }
-  
-  /* Dark mode tag support */
-  [data-theme='dark'] .tag {
-    background-color: #44416a;
-    color: #eee;
-  }
+  --bg: #f5f5f5;
+  --text: #111;
+  --accent: #6a5acd;
+  --card-bg: #fff;
+}
 
-/* Style nav links like buttons */
+[data-theme='dark'] {
+  --bg: #1e1e2f;
+  --text: #eee;
+  --accent: #9b8cff;
+  --card-bg: #2a2a3d;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding-top: 80px; /* Reserve space for fixed header */
+}
+
+section {
+  padding: 4rem 1rem;
+  border-bottom: 1px solid #ddd;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  color: var(--text);
+}
+
+h1, h2 {
+  color: var(--text);
+}
+
+.hero {
+  background: url('/images/hero-bg.jpg') center/cover no-repeat;
+  text-align: center;
+  padding: 8rem 1rem;
+  position: relative;
+}
+
+.hero h1,
+.hero p {
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.card {
+  background-color: var(--card-bg, #fff);
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 1rem;
+  color: var(--text-muted, #555);
+}
+
+.card .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #6c47ff;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+  background-color: #5532d9;
+}
+
+.card-cover {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.tags {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  background-color: #eaeaff;
+  color: #333;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+}
+
+[data-theme='dark'] .tag {
+  background-color: #44416a;
+  color: #eee;
+}
+
+/* NAVIGATION BUTTON STYLE */
 nav a {
   padding: 0.5rem 1rem;
   background: #5b4dff;
@@ -184,12 +139,36 @@ nav a:hover {
   background: #4538d1;
 }
 
-/* Responsive navigation layout */
+/* --- FIXED HEADER STYLE --- */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--bg);
+  z-index: 1000;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Burger button */
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--text);
+}
+
+/* Responsive NAV layout */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
     align-items: flex-start;
-    padding: 1rem;
   }
 
   nav {
@@ -197,10 +176,36 @@ nav a:hover {
     flex-wrap: wrap;
     gap: 0.5rem;
     margin-top: 1rem;
+    width: 100%;
   }
 
   nav a {
-    flex: 1 1 calc(50% - 1rem); /* two per row */
+    flex: 1 1 calc(50% - 1rem);
     text-align: center;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .main-nav.active {
+    display: flex;
+  }
+
+  .main-nav a {
+    margin: 0.5rem 0;
+    text-align: center;
+    background: #5b4dff;
+    color: white;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
   }
 }
