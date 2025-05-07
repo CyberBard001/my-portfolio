@@ -2,11 +2,9 @@
 title: "The Evolution of Corporate Training: From Teaching to Guiding"
 date: 2025-05-07
 description: "Explore how corporate training has shifted from instructor-led models to learner-centered guidance, boosting engagement and performance."
-tags:
-  - Corporate Training
-  - L&D
-  - Facilitation
-  - cover: evolution.jpg
+tags: ["Corporate Training", "L&D", "Facilitation"]
+cover: evolution.jpg
+
 ---
 
 > “What if I told you that the most powerful training session isn’t one where you’re lectured at, but one where you discover the answers yourself?”
